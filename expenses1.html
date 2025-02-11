@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Smart Expense Tracker: A Simple Tool for Managing Daily Finances</title>
+  <link rel="stylesheet" href="expedesign.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Smart Expense Tracker</h1>
+    <p>For Tharun Ravula</p>
+
+    <!-- Form to add expenses -->
+    <div class="form-container">
+      <h2>Add Expense</h2>
+      <form id="expense-form">
+        <label for="amount">Amount:</label>
+        <input type="number" id="amount" required>
+
+        <label for="category">Category:</label>
+        <select id="category" required>
+            <option value="food">Food</option>
+            <option value="transport">Transport</option>
+            <option value="entertainment">Entertainment</option>
+            <option value="housing">Housing</option>
+            <option value="utilities">Utilities</option>
+            <option value="health">Health</option>
+            <option value="education">Education</option>
+            <option value="shopping">Shopping</option>
+            <option value="travel">Travel</option>
+            <option value="gifts">Gifts</option>
+            <option value="savings">Savings</option>
+            <option value="investments">Investments</option>
+            <option value="insurance">Insurance</option>
+            <option value="subscriptions">Subscriptions</option>
+            <option value="personal-care">Personal Care</option>
+            <option value="childcare">Childcare</option>
+            <option value="pet-care">Pet Care</option>
+            <option value="charity">Charity</option>
+            <option value="taxes">Taxes</option>
+            <option value="debt-repayment">Debt Repayment</option>
+            <option value="business-expenses">Business Expenses</option>
+            <option value="hobbies">Hobbies</option>
+            <option value="fitness">Fitness</option>
+            <option value="technology">Technology</option>
+            <option value="other">Other</option>
+        </select>
+
+        <label for="date">Date:</label>
+        <input type="date" id="date" required>
+
+        <button type="submit">Add Expense</button>
+      </form>
+    </div>
+
+    <!-- Display expenses -->
+    <div class="expenses-container">
+      <h2>Your Expenses</h2>
+      <table id="expense-table">
+        <thead>
+          <tr>
+            <th>Amount</th>
+            <th>Category</th>
+            <th>Date</th>
+            <th>Action</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- Expenses will be dynamically added here -->
+        </tbody>
+      </table>
+    </div>
+
+    <!-- Total expenses -->
+    <div class="total-container">
+      <h2>Total Expenses</h2>
+      <p id="total-amount">Total: ₹0.00</p>
+    </div>
+  </div>
+
+  <script src="logicexpe.js"></script>
+</body>
+</html>
